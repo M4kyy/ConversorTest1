@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package com.mycompany.conversortest1;
 
 import javax.swing.JOptionPane;
@@ -132,7 +129,7 @@ public class Conversor extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(this, "El resultado es: "+ resultado);       
         }catch(NumberFormatException nf){
             
-            JOptionPane.showMessageDialog(this, "Solo debe ingresar numeros enteros");
+            JOptionPane.showMessageDialog(this, "Solo puede ingresar numeros enteros en el casillero");
         }
             
     }//GEN-LAST:event_jButton1ActionPerformed
