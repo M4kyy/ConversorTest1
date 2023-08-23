@@ -3,10 +3,7 @@ package com.mycompany.conversortest1;
 
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Ale
- */
+
 public class Conversor extends javax.swing.JFrame {
 
     /**
@@ -125,6 +122,7 @@ public class Conversor extends javax.swing.JFrame {
             int gradosc = Integer.parseInt(jtgradoc.getText());
         
         int resultado = gradosc * 9/5 + 32;
+      
         
         JOptionPane.showMessageDialog(this, "El resultado es: "+ resultado);       
         }catch(NumberFormatException nf){
