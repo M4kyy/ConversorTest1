@@ -124,12 +124,17 @@ public class Conversor extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       
-        int gradosc = Integer.parseInt(jtgradoc.getText());
+        try{
+            int gradosc = Integer.parseInt(jtgradoc.getText());
         
         int resultado = gradosc * 9/5 + 32;
         
         JOptionPane.showMessageDialog(this, "El resultado es: "+ resultado);       
+        }catch(NumberFormatException nf){
+            
+            JOptionPane.showMessageDialog(this, "Solo debe ingresar numeros enteros");
+        }
+            
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
